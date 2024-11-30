@@ -1,4 +1,4 @@
-const Fraction = require('fraction.js');
+import Fraction from 'fraction.js';
 
 const OP = {
   '|': 'abs',
