@@ -132,40 +132,40 @@ const m1 = new Fric('-10'); //             -10
 const m2 = m1.div('3'); //              -10 / 3
 const m3 = m2.mul('8.1').div('100'); // -10 / 3 * 8.1%
 
-console.log(m1.explain());
-console.log(m1.valueOf());
+console.log('EXPLAIN:   ', m1.explain());
+console.log('VALUEOF:   ', m1.valueOf());
 console.log('');
 
-console.log(m2.explain());
-console.log(m2.valueOf());
+console.log('EXPLAIN:   ', m2.explain());
+console.log('VALUEOF:   ', m2.valueOf());
 const m7 = m2.round(2);
-console.log(m7.explain());
-console.log(m7.valueOf());
+console.log('EXPLAIN:   ', m7.explain());
+console.log('VALUEOF:   ', m7.valueOf());
 const s3 = m7.serialize();
 console.log('SERIALIZED:', s3);
 
 console.log('');
 
-console.log(m3.explain());
-console.log(m3.valueOf());
+console.log('EXPLAIN:   ', m3.explain());
+console.log('VALUEOF:   ', m3.valueOf());
 const s = m3.serialize();
 console.log('SERIALIZED:', s);
 console.log('');
 
 const m4 = Fric.deserialize(s);
-console.log(m4.explain());
+console.log('EXPLAIN:   ', m4.explain());
 m4.clear();
-console.log(m4.explain());
+console.log('EXPLAIN:   ', m4.explain());
 const s4 = m4.serialize();
 console.log('SERIALIZED:', s4);
 console.log('');
 
 const m5 = new Fric('2');
 const m6 = m5.pow('3').log('2').add('50.5').mul('8.1').div('100');
-console.log(m6.explain());
-console.log(m6.valueOf());
+console.log('EXPLAIN:   ', m6.explain());
+console.log('VALUEOF:   ', m6.valueOf());
 const m8 = m6.round(2);
-console.log(m8.explain());
-console.log(m8.valueOf());
+console.log('EXPLAIN:   ', m8.explain());
+console.log('VALUEOF:   ', m8.valueOf());
 const s2 = m8.serialize();
 console.log('SERIALIZED:', s2);
