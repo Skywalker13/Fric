@@ -156,6 +156,8 @@ const m4 = Fric.deserialize(s);
 console.log(m4.explain());
 m4.clear();
 console.log(m4.explain());
+const s4 = m4.serialize();
+console.log('SERIALIZED:', s4);
 console.log('');
 
 const m5 = new Fric('2');
