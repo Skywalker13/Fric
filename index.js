@@ -77,7 +77,7 @@ class Fric {
     return this.#op('o', places);
   }
 
-  clear() {
+  squash() {
     this.#ops = [['', this.#value.clone()]];
   }
 
@@ -154,7 +154,7 @@ console.log('');
 
 const m4 = Fric.deserialize(s);
 console.log('EXPLAIN:   ', m4.explain());
-m4.clear();
+m4.squash();
 console.log('EXPLAIN:   ', m4.explain());
 const s4 = m4.serialize();
 console.log('SERIALIZED:', s4);
