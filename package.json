@@ -13,9 +13,11 @@
     "fraction.js": "^5.2.1"
   },
   "devDependencies": {
-    "xcraft-dev-rules": "^4.4.2",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
     "prettier": "2.0.4",
-    "xcraft-dev-prettier": "^2.0.0"
+    "xcraft-dev-prettier": "^2.0.0",
+    "xcraft-dev-rules": "^4.4.2"
   },
   "prettier": "xcraft-dev-prettier"
 }
