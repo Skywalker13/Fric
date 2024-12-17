@@ -2,8 +2,10 @@
 
 Very simple PoC for an idea to keep the whole history of a number without precision lose.
 
+**NOT PUBLISHED ON NPM.JS**
+
 ```js
-import Fric from 'fric.js';
+import Fric from 'fric';
 
 const f1 = new Fric('4.2');
 f1.toFraction(); // '21/5'
