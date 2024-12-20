@@ -17,6 +17,6 @@ f2.serialize(); // '21/5:*81/10:/100'
 
 let f3 = Fric.deserialize('21/5:*81/10:/100');
 f3.toFraction(); // '1701/5000'
-fs = f3.round(2); // '17/50'
+f3 = f3.round(2); // '17/50'
 f3.serialize(); // '21/5:*81/10:/100:o2'
 ```
